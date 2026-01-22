@@ -7,7 +7,7 @@ import { TaskItemComponent } from './task-item/task-item.component';
   standalone: true,
   templateUrl: './tasks-list.component.html',
   styleUrl: './tasks-list.component.css',
-  imports: [TaskItemComponent],
+  imports: [TaskItemComponent, TasksService],
 })
 export class TasksListComponent {
   selectedFilter = signal<string>('all');
